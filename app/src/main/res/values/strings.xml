@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">NCG Television</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">&#160;&#160;E-mail</string>
+    <string name="password">&#160;&#160;Password</string>
+    <string name="keep_login">keep me logged in</string>
+    <string name="subscribe_now">Not a subscriber? Subscribe Now</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_description">Enter the email address and we will email you a link to reset your password</string>
+    <string name="send_email">Send Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_main">Leanback Title</string>
+    <string name="browse_title">NCG Television</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+    <string name="my_account">My Account</string>
+    <string name="my_membership">Your Memberships</string>
+    <string name="memberships">Memberships</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="delete"><u>Delete</u></string>
+    <string name="membership_unsubscribe">You have successfully unsubscribe membership!!!</string>
+    <string name="go_to_channel">&#160;  GO TO CHANNEL</string>
+    <string name="ncg_tv">NCG Television</string>
+    <string name="tv_home_text">The only television circuit that makes you a &#160;PROTAGONIST!</string>
+    <string name="my_list">&#160; My List</string>
+    <string name="watch_other_episodes">Watch Other Episodes</string>
+    <string name="most_wanted">Most Wanted</string>
+    <string name="most_seen">The Most Seen</string>
+    <string name="play_now">Play Now</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="ask_logout_msg">Are you sure that you want to logout NCG?</string>
+    <string name="subscription_en">This video content is for a fee and at this time you have not signed up for any subscription or purchased for viewing (in the case of a single video). To be able to view it, we INVITE YOU to go directly to the website <b><font color="#FFFFFF">www.ncgtelevision.net</font></b>, so that you can unlock this and many other contents that NCG has selected and made available to you, and then return to the television app and view all the videos / format, purchased, whenever you want, for 12 months.</string>
+    <string name="english">English</string>
+    <string name="subscription_italian">Questo contenuto video è a pagamento e in questo momento non hai sottoscritto nessun abbonamento o non hai effettuato l\'acquisto per la visualizzazzione (nel caso di un singolo video). Per poterlo visualizzare, TI INVITIAMO ad andare direttamente al sito <b><font fgcolor="#F8F8F8">www.ncgtelevision.net</font></b>, in modo da poter sbloccare questo e molti altri contenuti che NCG ha selezionato e messo a tua disposizione, per poi tornare nell\'app televisiva e visualizzare tutti i video/format, acquistati, ogni volta che lo vorrai, per 12 mesi.</string>
+    <string name="italian">Italian</string>
+    <string name="subscription_spanish">Este contenido de video es por una tarifa y en este momento no se ha suscrito a ninguna suscripción ni ha comprado para verlo (en el caso de un solo video). Para poder verlo, TE INVITAMOS a que vayas directamente al sitio web <b><font fgcolor="#F8F8F8">www.ncgtelevision.net</font></b>, para que puedas desbloquear este y muchos otros contenidos que NCG ha seleccionado y puesto a tu disposición, y luego volver a la aplicación de televisión y ver todos los videos / formato, comprado, cuando lo desee, durante 12 meses.</string>
+    <string name="spanish">Spanish</string>
+    <string name="subscription_msg">This content requires a Paid Subscription.</string>
+    <string name="wish_msg">NCG wishes you good viewing</string>
+    <string name="spanish_wish_msg">Ncg Television le desea una buena visualización</string>
+    <string name="italian_wish_msg">La Ncg Television ti augura buona visione</string>
+</resources>

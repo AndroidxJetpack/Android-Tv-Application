@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:fillViewport="true"-->
+<!--    >-->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".channel.ChannelFragment"
+    >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logo_IB"-->
+<!--        android:layout_width="163px"-->
+<!--        android:layout_height="48px"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:elevation="6dp"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:src="@drawable/splash_logo"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:nextFocusDown="@id/logo_IB"-->
+<!--        android:nextFocusUp="@id/logo_IB"-->
+<!--        android:nextFocusRight="@id/logo_IB"-->
+<!--        android:focusable="true"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/title_TV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:elevation="6dp"-->
+<!--        android:fontFamily="@font/product_sans_regular"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/ncg_tv"-->
+<!--        android:textColor="@color/redApp"-->
+<!--        android:textSize="28dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo_IB" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/description_TV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="44dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:elevation="6dp"-->
+<!--        android:fontFamily="@font/product_sans_regular"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="@string/tv_home_text"-->
+<!--        android:textColor="#FFFFFFFF"-->
+<!--        android:textSize="18px"-->
+<!--        android:maxLines="2"-->
+<!--        android:ellipsize="end"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title_TV" />-->
+<!--        <com.google.android.exoplayer2.ui.SimpleExoPlayerView-->
+<!--            android:id="@+id/video_player_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="400dp"-->
+<!--            app:resize_mode="fill"-->
+<!--            app:rewind_increment="10000"-->
+<!--            app:fastforward_increment="10000"-->
+<!--            app:auto_show="true"-->
+<!--            app:surface_type="surface_view"-->
+<!--            app:use_controller="true"-->
+<!--            app:controller_layout_id="@layout/exoplayer_custom_controll_channel"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+<!--            />-->
+    <RelativeLayout
+        android:id="@+id/videoview_RL"
+        android:layout_width="match_parent"
+        android:layout_height="255dp">
+
+
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/video_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:resize_mode="fill"
+            app:rewind_increment="10000"
+            app:fastforward_increment="10000"
+            app:auto_show="true"
+            app:surface_type="surface_view"
+            app:use_controller="true"
+            app:controller_layout_id="@layout/exoplayer_custom_controll_channel"
+           />
+        <TextView
+            android:id="@+id/title_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="20dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center_vertical"
+            android:text="@string/ncg_tv"
+            android:textColor="@color/redApp"
+            android:textSize="16sp"
+            android:layout_below="@+id/logo_IB" />
+
+        <TextView
+            android:id="@+id/description_TV"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="12dp"
+            android:elevation="6dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center_vertical"
+            android:text="@string/tv_home_text"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@+id/title_TV"
+            />
+
+        <ImageView
+            android:id="@+id/logo_IB"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="16dp"
+            android:elevation="6dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/splash_logo2"
+            android:nextFocusDown="@id/logo_IB"
+            android:nextFocusUp="@id/logo_IB"
+            android:nextFocusRight="@id/logo_IB"
+            android:focusable="true"
+            />
+        <TextView
+            android:id="@+id/header_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redApp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/dimens_10dp"
+            android:text=""
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:id="@+id/sub_header_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteApp"
+            android:text="title"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/header_label"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/sub_channel_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteApp"
+        android:text="title"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="@dimen/dimens_10dp"
+        android:visibility="gone"
+        />
+    <FrameLayout
+        android:id="@+id/row_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_marginTop="190dp"
+        android:layout_gravity="center|end"
+        android:background="#85101012"
+        android:padding="@dimen/dimens_5dp"
+        android:src="@drawable/right"
+        style="@style/ExoMediaButton.Next"
+        android:layout_height="30dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--</ScrollView>-->

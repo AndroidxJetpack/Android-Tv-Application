@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".account.MembershipFragment">
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/splash_logo2" />
+
+    <LinearLayout
+        android:id="@+id/link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/membership"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/product_sans_regular"
+            android:nextFocusDown="@id/account"
+            android:text="@string/memberships"
+            android:textColor="@drawable/text_states"
+            android:textSize="20sp"
+            android:nextFocusUp="@id/membership"/>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:fontFamily="@font/product_sans_regular"
+            android:nextFocusDown="@id/userName"
+            android:text="@string/my_account"
+            android:textColor="@drawable/text_states"
+            android:textSize="20sp"
+            android:nextFocusUp="@id/account"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="1dp"
+        android:background="@color/default_background"
+        android:layout_marginBottom="@dimen/dimens_10dp"
+        />
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/product_sans_bold"
+        android:text="@string/my_membership"
+        android:textColor="@color/whiteApp"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/account_scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:id="@+id/membership_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/membership_container_outline">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/user_name"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:editable="false"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/user_name"
+                    android:inputType="none"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:nextFocusUp="@id/account"
+                    android:nextFocusRight="@id/userName"
+                    android:nextFocusLeft="@id/userName"
+                    android:nextFocusDown="@id/firstName"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/first_name"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/first_name"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp"
+                    android:nextFocusUp="@id/userName"
+                    android:nextFocusRight="@id/firstName"
+                    android:nextFocusLeft="@id/firstName"
+                    android:nextFocusDown="@id/lastName"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/last_name"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/last_name"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp"
+                    android:nextFocusUp="@id/firstName"
+                    android:nextFocusRight="@id/lastName"
+                    android:nextFocusLeft="@id/lastName"
+                    android:nextFocusDown="@id/ed_email"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/email"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp"
+                    android:nextFocusUp="@id/lastName"
+                    android:nextFocusRight="@id/ed_email"
+                    android:nextFocusLeft="@id/ed_email"
+                    android:nextFocusDown="@id/ed_password"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/new_password"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp"
+                    android:nextFocusUp="@id/ed_email"
+                    android:nextFocusRight="@id/ed_password"
+                    android:nextFocusLeft="@id/ed_password"
+                    android:nextFocusDown="@id/ed_conf_password"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="22dp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/confirm_password"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_conf_password"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:autofillHints=""
+                    android:background="@drawable/edittext_states"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/product_sans_light"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/edBorderColor"
+                    android:textColorHint="@color/edBorderColor"
+                    android:textSize="16sp"
+                    android:nextFocusUp="@id/ed_password"
+                    android:nextFocusRight="@id/ed_conf_password"
+                    android:nextFocusLeft="@id/ed_conf_password"
+                    android:nextFocusDown="@id/btn_sign_in"/>
+
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/button_states"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:padding="4dp"
+                    android:text="@string/sign_in"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteApp"
+                    android:textSize="14sp"
+                    android:nextFocusUp="@id/ed_conf_password"
+                    android:nextFocusRight="@id/btn_sign_in"
+                    android:nextFocusLeft="@id/btn_sign_in"
+                    android:nextFocusDown="@id/account"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

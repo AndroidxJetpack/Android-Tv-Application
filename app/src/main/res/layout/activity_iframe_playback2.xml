@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".playback.IframePlaybackActivity"
+    android:background="@drawable/splash_bg_image">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+
+        android:id="@+id/video_player_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fill"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:auto_show="true"
+        app:surface_type="surface_view"
+        app:use_controller="false"
+        app:controller_layout_id="@layout/exoplayer_custom_controll_channel"
+        />
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/webview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

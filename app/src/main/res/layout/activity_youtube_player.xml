@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+<!--        android:id="@+id/youtube_player_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        app:showFullScreenButton="false"-->
+<!--        app:showYouTubeButton="false"-->
+<!--        />-->
+
+<!--    <fr.bmartel.youtubetv.YoutubeTvView-->
+<!--        android:id="@+id/youtube_video"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:yt_showControls="none"-->
+<!--        app:yt_showRelatedVideos ="false"-->
+<!--        app:yt_showVideoInfo="false"-->
+<!--        app:yt_autoHide="auto"-->
+<!--        app:yt_closedCaptions="false"-->
+<!--        app:yt_debug="false"-->
+<!--        app:yt_showBorder="false"-->
+<!--        app:yt_showNowPlayingCard="false"-->
+<!--        app:yt_videoAnnotation="false"-->
+<!--        />-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/showProgress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:background="#6D000000"-->
+<!--        android:paddingHorizontal="@dimen/dimens_20sp"-->
+<!--        android:paddingVertical="@dimen/dimens_10dp"-->
+<!--        >-->
+<!--        <SeekBar-->
+<!--            android:id="@+id/seekbar"-->
+<!--            style="@style/Base.Widget.AppCompat.SeekBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="6dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:theme="@style/SeekBar"-->
+<!--           />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:gravity="center_vertical"-->
+<!--            >-->
+<!--            <TextView android:id="@id/exo_position"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:textSize="16sp"-->
+<!--                android:paddingLeft="4dp"-->
+<!--                android:paddingRight="4dp"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:textColor="@color/whiteApp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:fontFamily="@font/product_sans_regular"/>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:gravity="center">-->
+<!--                <ImageButton android:id="@id/exo_rew"-->
+<!--                    style="@style/ExoMediaButton.Rewind"-->
+<!--                    android:nextFocusRight="@id/exo_pause"-->
+<!--                    android:nextFocusLeft="@id/exo_ffwd"-->
+<!--                    android:nextFocusUp="@id/exo_rew"-->
+<!--                    android:nextFocusDown="@id/exo_rew"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/play_pause_state"/>-->
+
+<!--                <ImageButton android:id="@id/exo_play"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    style="@style/ExoMediaButton.Play"-->
+<!--                    android:background="@drawable/play_pause_state"-->
+<!--                    android:nextFocusRight="@id/exo_play"-->
+<!--                    android:nextFocusUp="@id/exo_play"-->
+<!--                    android:nextFocusDown="@id/exo_play"-->
+<!--                    android:nextFocusLeft="@id/exo_play"-->
+<!--                    android:visibility="gone"/>-->
+
+<!--                <ImageButton android:id="@id/exo_pause"-->
+<!--                    style="@style/ExoMediaButton.Pause"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/play_pause_state"-->
+<!--                    android:nextFocusRight="@id/exo_ffwd"-->
+<!--                    android:nextFocusLeft="@id/exo_rew"-->
+<!--                    android:nextFocusUp="@id/exo_pause"-->
+<!--                    android:nextFocusDown="@id/exo_pause"/>-->
+
+<!--                <ImageButton android:id="@id/exo_ffwd"-->
+<!--                    style="@style/ExoMediaButton.FastForward"-->
+<!--                    android:nextFocusLeft="@id/exo_pause"-->
+<!--                    android:nextFocusRight="@id/exo_rew"-->
+<!--                    android:nextFocusUp="@id/exo_ffwd"-->
+<!--                    android:nextFocusDown="@id/exo_ffwd"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:background="@drawable/play_pause_state"/>-->
+<!--            </LinearLayout>-->
+<!--            <TextView android:id="@id/exo_duration"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:textSize="16dp"-->
+<!--                android:paddingLeft="4dp"-->
+<!--                android:paddingRight="4dp"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:textColor="@color/whiteApp"-->
+<!--                android:fontFamily="@font/product_sans_regular"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "334546299671",
+    "project_id": "mytest-mjwqos",
+    "storage_bucket": "mytest-mjwqos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334546299671:android:f0862ed1510d4bc21fa552",
+        "android_client_info": {
+          "package_name": "com.ncgtelevision.net"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334546299671-1918b3oi71dmq2nvvscj18pqbet4q3d9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ot8lohEn8ul9-W6LRldEjO7vptD46Ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334546299671-1918b3oi71dmq2nvvscj18pqbet4q3d9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

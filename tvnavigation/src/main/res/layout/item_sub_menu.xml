@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="subMenu"
+    android:textColor="@drawable/button_text_color_state"
+    android:fontFamily="@font/product_sans_regular"
+    android:nextFocusForward="@id/manage"
+    android:nextFocusLeft="@id/manage"
+    android:background="@drawable/button_text_state"
+    android:textSize="13sp"
+    android:gravity="start"
+    android:minHeight="0dp"
+    android:minWidth="0dp"
+    android:layout_marginStart="@dimen/dimens_30dp"
+    android:textAllCaps="false"
+    />
+
+
+

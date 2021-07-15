@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".signin.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="245px"
+            android:layout_height="75px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/splash_logo" />
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@color/grey_200"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/product_sans_regular"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textColor="@color/whiteApp"
+                android:textSize="22sp" />
+
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_states"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/product_sans_light"
+                android:hint="email or username"
+                android:inputType="text"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/edBorderColor"
+                android:textColorHint="@color/edBorderColor"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="22dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_states"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/product_sans_light"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/edBorderColor"
+                android:textColorHint="@color/edBorderColor"
+                android:textSize="16sp" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:text="@string/keep_login"
+                    android:textColor="@drawable/text_states_light"
+                    android:textSize="16sp"
+                    android:theme="@style/MyCheckbox" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="12dp"
+                    android:padding="4dp"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlCompat" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_states"
+                android:fontFamily="@font/product_sans_regular"
+                android:padding="4dp"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteApp"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/text_subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/product_sans_medium"
+                android:text="If you are not a registered NCG user, we invite you to go to the website www.ncgtelevision.net and register to see all the contents of NCG Television"
+                android:textAlignment="center"
+                android:textColor="@color/whiteApp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_forgot_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/product_sans_medium"
+                android:nextFocusUp="@id/btn_sign_in"
+                android:nextFocusDown="@id/ed_email"
+                android:text="@string/forgot_password"
+                android:textAlignment="center"
+                android:textColor="@drawable/text_states"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

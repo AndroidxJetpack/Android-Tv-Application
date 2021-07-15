@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/redApp"
+    android:orientation="vertical">
+<!--    <FrameLayout-->
+<!--        android:id="@+id/videoview_frame"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--    />-->
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/video_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<!--    <ImageButton android:id="@id/exo_next"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="#CC000000"-->
+<!--        style="@style/ExoMediaButton.Next"/>-->
+<!--<VideoView-->
+<!--    android:id="@+id/video_view"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="250dp"-->
+<!--    android:visibility="gone"/>-->
+</LinearLayout>

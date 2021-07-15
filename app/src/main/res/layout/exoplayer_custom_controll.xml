@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton android:id="@id/exo_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home_button_states"
+        style="@style/ExoMediaButton.Play"
+       />
+
+    <ImageButton android:id="@id/exo_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/home_button_states"
+        style="@style/ExoMediaButton.Pause"/>
+
+    <ImageButton android:id="@id/exo_repeat_toggle"
+        android:layout_gravity="center"
+        style="@style/ExoMediaButton"/>
+
+    <ImageButton android:id="@id/exo_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|right"
+        style="@style/ExoMediaButton.Next"
+        android:src="@drawable/ic_exoplayer_forward"
+       />
+
+    <ImageButton android:id="@id/exo_prev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|left"
+        style="@style/ExoMediaButton.Previous"
+        android:src="@drawable/ic_exoplayer_back"
+        android:nextFocusLeft="@id/exo_next"/>
+
+</FrameLayout>

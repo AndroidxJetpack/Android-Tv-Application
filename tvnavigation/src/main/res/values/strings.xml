@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Movies">Movies</string>
+    <string name="Shows">Shows</string>
+    <string name="PodCasts">PodCasts</string>
+    <string name="Music">Music</string>
+    <string name="News">News</string>
+    <string name="Settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="account">Account</string>
+    <string name="free_channel">Free Channel</string>
+    <string name="thematic_channel">Thematic Channel</string>
+    <string name="school_channel">School Channel</string>
+</resources>
